@@ -21,7 +21,7 @@ import re
 from graphics import *
 
 def main():
-    
+    win = GraphWin("title",400,400)
     words=open('veldt.txt',encoding='utf-8').read().split()
     #CatcherInTheRye.txt and AdventuresSherlockHolmes.txt are interesting ones
     #to look at!

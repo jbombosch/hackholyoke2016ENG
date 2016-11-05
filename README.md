@@ -1,2 +1,3 @@
 # hackholyoke2016ENG
-Create code that can analyse and identify smilies, assonance, alliteration.
+A program that can analyze, identify, and graph spin (good - bad words), onomatopoeia, assonance, + alliteration.
+Made by a trio of first-year Smithies! :D

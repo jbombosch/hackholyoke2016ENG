@@ -1,4 +1,4 @@
-# Juliane x Sarah Abowitz x Minyue Dai | HH16
+# Juliane Donahue-Bombosch x Sarah Abowitz x Minyue Dai | HH16
 # teaching computers lit for science
 
 # memespeak?? meme recognition?? 

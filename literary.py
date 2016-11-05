@@ -22,18 +22,30 @@ from graphics import *
 
 def main():
     win = GraphWin("title",400,400)
+    win.setCoords(-100,-100,100,100)
     words=open('veldt.txt',encoding='utf-8').read().split()
     #CatcherInTheRye.txt and AdventuresSherlockHolmes.txt are interesting ones
     #to look at!
 
     #choose aliceOne.txt, Sherlock, veldt.txt, or Catcher
     #or implement a howto get files to put through
-
+    
+    p1 = Point(-100,0)
+    
     wordsDivided = divvy(words)
     sector = 1
+    spinsum = 0
     for i in wordsDivided:
         print("sector",sector)
+        
         print("spin",spin(i))
+        spinsum += spin(i) 
+        p2 = Point(-100+(sector*20),(spinsum*10))
+        wordline = Line(p1,p2)
+        wordline.draw(win)
+        p1 = p2.clone()        
+
+        
         print("onomatopoeia",onomatopoeia(i))
         print("assonance",assonance(i))
         print("alliteration", alliteration(i))
